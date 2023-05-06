@@ -27,7 +27,7 @@ mv ${__WEIGHTSPATH}/${__WEIGHTSNAME}.onnx ./export/${__PRJNAME}.onnx
 source activate rknn
 
 # 将 onnx 模型转换为 rknn 模型
-python onnx2rknn.py ${__IMG_SZ} ${__ONNX_MODEL} ${__RKNN_MODEL} ${__TARGET_PLATFORM} ${__DATA_SET} ${__TEST_IMG}
+python onnx2rknn.py ${__IMG_SZ} ${__ONNX_MODEL} ${__RKNN_MODEL} ${__TARGET_PLATFORM} ${__DATA_SET} ${__TEST_IMG} ${__QUANTIZE}
 # parser.add_argument('--img-size', type=int, default=[320], help='inference size h,w')
 # parser.add_argument('--conf-thres', type=float,
 #                     default=0.25, help='confidence threshold')
