@@ -1,5 +1,12 @@
 ## RK3588 定制
 
+### 环境配置
+
+请参考博客
+
+[CSDN博客](https://blog.csdn.net/zhoujinwang/article/details/130524310?spm=1001.2014.3001.5501)
+
+
 ### 训练
 
 #### 标注数据
@@ -32,6 +39,13 @@
 **前提条件: 已经创建了虚拟环境 `pytorch`**
 **前提条件: 已经创建了虚拟环境 `pytorch`**
 **前提条件: 已经创建了虚拟环境 `pytorch`**
+
+下载预训练模型到 `yolov5` 同级目录  `pre-trained` 文件夹下，预训练模型下载地址
+
+
+[预训练模型下载地址](https://github.com/ultralytics/yolov5/releases/tag/v5.0)
+[yolov5s](https://objects.githubusercontent.com/github-production-release-asset-2e65be/264818686/56dd3480-9af3-11eb-9c92-3ecd167961dc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230504%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230504T073902Z&X-Amz-Expires=300&X-Amz-Signature=0230f16ac8e61ed06b8ae51e69cca351941ba0bb4de6ba9f39688f42fecf355e&X-Amz-SignedHeaders=host&actor_id=3182451&key_id=0&repo_id=264818686&response-content-disposition=attachment%3B%20filename%3Dyolov5s.pt&response-content-type=application%2Foctet-stream)
+
 
 在训练之前确定  `./models/yolo.py` 文件中的 `class Detect(nn.Module):` 类 `line:55` 里 `forward` 代码是否解注释了。
 
